@@ -1,0 +1,454 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+  # main:
+    #- identifier: blog
+    #  name: Blog
+    #  title: Blog posts
+    #  url: /blogs
+    #  weight: 1
+    #- identifier: gallery
+    #  name: Gallery
+    #  title: Blog posts
+    #  url: /gallery
+    #  weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  # favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#007bff"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#304145" # # 007bff" original blue
+    secondaryColor: "#f8f9fa"
+
+    # 238f51 green
+    # 3d3d3d dark gray
+    # ece9e1 light gray
+    # 3f3b37 dark brown
+    # 304145 dark green
+
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Резюме" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    # intro: "г. Казань"
+    title: "Элина Садыкова"
+    subtitle: "технический писатель"
+    content: |
+      Опыт работы в IT — 1 год и 8 месяцев<br>
+      Общий стаж — 6 лет
+
+      Казань, 28 лет
+    image: "/images/6.jpg"
+    bottomImage:
+      enable: false
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Скачать резюме в PDF"
+      url: "https://glvrd.ru/"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+      - icon: fab fa-telegram
+        url: "https://t.me/ellridd/"
+      - icon: fab fa-whatsapp
+        url: "https://wa.me/79603919060"
+      - icon: fa fa-envelope
+        url: "mailto:sadykovaelinaa@gmail.com"
+      #  - icon: fab fa-x-twitter
+      #    url: https://example.com
+      # customIcons:
+        # - icon: 
+          # url: 
+
+  # About
+  about:
+    enable: true
+    title: "О себе"
+    image: "/images/2.jpg"
+    content: |
+      Технический писатель с опытом UX-редактуры. 
+
+      Понимаю, что хорошо написанная документация повышает лояльность и число клиентов, снижает нагрузку на службу поддержки. 
+      Умею ставить себя на место пользователя и писать просто о сложном.  
+      Легко нахожу общий язык с людьми, есть опыт взаимодействия с разработчиками, продактами, дизайнерами.
+
+      За год с небольшим выросла от стажёра до уровня middle в одной из крупнейших IT-компаний России.
+      Увлечена профессией, эмпатична, инициативна. 
+    skills:
+      enable: true
+      title: "Навыки и технологии:"
+      items:
+        - "Пользовательская документация на русском и английским"
+        - "UX-тексты на русском и английском"
+        - "Инфостиль"
+        - "API-документация"
+        - "Docs as code"
+        - "Git"
+        - "Markdown"
+        - "Hugo & Docusaurus"
+        - "Jira & Confluence"
+        - "HTML & CSS"
+        - "Figma"
+        - "Weblate"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Опыт работы"
+    items:
+      - job: "Технический писатель"
+        company: "VK"
+        companyUrl: #"https://vk.company/ru/"
+        date: "Июнь 2023 – Сентябрь 2024"
+        featuredLink:
+          enable: false
+          name: "MyTracker"
+          url: "https://docs.tracker.my.com/ru"
+        info:
+          enable: false
+          content:  
+        content: |
+         Работала в команде продуктовой разработки системы аналитики сайтов и мобильных приложений [MyTracker](https://tracker.my.com/ru). 
+         Системой пользуются все проекты VK и внешние клиенты. 
+         
+         Что писала:
+          - пользовательскую [документацию](https://docs.tracker.my.com/ru) на русском и английском;
+          - интерфейсные тексты на русском и английском;
+          - маркетинговые дайджесты.
+
+          А ещё: 
+          - вычитывала коллег технических писателей;
+          - разрабатывала стайлгайд для документации;
+          - собирала информацию у команды, чтобы понятно писать о сложном продукте.
+        
+      - job: "Младщий технический писатель"
+        company: "Цифровая Индустриальная Платформа"
+        companyUrl: #"https://www.zyfra.com/ru/"
+        date: "Февраль 2023 – Июнь 2023"
+        featuredLink:
+          enable: false
+          name: "ЦИП"
+          url: "https://idp.zyfra.com/"
+        info:
+          enable: false
+          content: 
+        content: |
+         Работала на проекте внедрения лабораторной информационной менеджмент-системы.
+         
+         Что делала:
+          - наполняла и оформляла проектные документы по регламентам заказчика;
+          - вела документацию проекта в Confluence;
+          - выполняла аналитические задачи — заполнение таблиц в Excel, маппинг функциональных требований и реестра доработок.
+
+      - job: "Документовед"
+        company: "Транснефть — Порт Приморск"
+        companyUrl: #"https://example.com"
+        date: "Август 2021 – Май 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content:  
+        content: |
+         Работала документоведом в отделе делопроизводства с большим объёмом информации в режиме многозадачности.
+         
+         Что делала:
+          - вычитывала и редактировала исходящие и внутренние документы: приказы, письма, служебные записки;
+          - консультировала сотрудников по оформлению и наполнению документов;
+          - выполняла обязанности руководителя отдела на время отпуска руководителя.
+
+  # Education
+  education:
+    enable: true
+    title: "Образование"
+    index: false
+    items:
+      - title: "UX-редактор"
+        school:
+          name: "Нетология"
+          url: "https://netology.ru/programs/ux-copywriting"
+        date: "Январь – Май 2024"
+        # GPA: "3.8 out of 5.0"
+        content: |
+         Освоила навыки UX-редактора:  
+         - фреймворки Jobs to be done и Job stories;
+         - формулирование гипотезы и подбор метрик;
+         - создание сторифреймов и макетов в Figma и FigJam;
+         - определение и написание tone of voice продукта;
+         - написание текстов с соблюдением tone of voice;
+         - проведение UX-исследований и анализ результатов;
+         - локализация, инклюзивность и адаптация под разные устройства.
+         
+         Все знания применила в дипломной работе — разработала прототип приложения для медитаций.
+          
+        featuredLink:
+          enable: true
+          name: "Дипломная работа"
+          url: "https://clck.ru/3DRmVb"
+      - title: "Инженер-проектировщик объектов транспорта и хранения нефти и газа"
+        school:
+          name: "Уфимский государственный нефтяной технический университет"
+          url: "https://rusoil.net/"
+        date: "2013 – 2019"
+        # GPA: "4.9 из 5.0"
+        content: |
+         Окончила университет с красными дипломами по специальностям:
+         - Магистратура — Проектирование и эксплуатация объектов трубопроводного транспорта углеводородов.
+         - Бакалавриат — Эксплуатация и обслуживание объектов транспорта и хранения нефти, газа  и продуктов переработки.
+          
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: false
+    title: "Достижения"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievment.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievment.jpg
+      #- title: Hugo Profile
+      #  content: Developed a theme and getting 1K+ downloads per month.
+      #  url: "https://github.com/gurusabarish/hugo-profile"
+      #  image: /images/achievment.jpg
+
+  # projects
+  projects:
+    enable: true
+    title: "Примеры работ"
+    items:
+      - title: Статьи
+        content: |
+          Примеры моих статей:
+           - <a href="https://docs.tracker.my.com/ru/environment/application/integration_status" target="_blank">Статус интеграции</a><br>
+              <a href="/attachments/integration_status.pdf" target="_blank">Версия в PDF</a>
+           - <a href="https://docs.tracker.my.com/ru/api/export-api/dictionary/rooted" target="_blank">Рутованное устройство и Jailbreak</a><br>
+              <a href="/attachments/root_and_jailbreak.pdf" target="_blank">Версия в PDF</a> 
+           - <a href="https://docs.tracker.my.com/ru/environment/application/rustore_integration" target="_blank">Интеграция с RuStore</a><br>
+              <a href="/attachments/rustore.pdf" target="_blank">Версия в PDF</a>
+         
+          Прод может меняться, поэтому прикладываю исходный PDF-вариант.
+
+        # image: /images/projects/profile.png
+        # featured:
+          # name: Demo
+          # link: https://hugo-profile.netlify.app
+        # badges:
+          # - "Hugo"
+          # - "Bootstrap"
+          # - "Javascript"
+        # links:
+          # - icon: fa fa-envelope
+            # url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          # - icon: fab fa-github
+           # url: https://github.com/gurusabarish/hugo-profile
+          # - icon: fab fa-twitter
+          #  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: UX-тексты
+        content: |
+          Примеры моих текстов: 
+
+        # image: /images/projects/converter.jpg
+        # featured:
+          # name: Demo
+          # link: https://django-converter.herokuapp.com
+        # badges:
+          # - "Django"
+          # - "Bootstrap"
+        # links:
+          # - icon: fab fa-github
+            # url: https://github.com/gurusabarish/converter
+
+      #- title: Hugo Profile V2
+      #  content: A clean and simple Hugo template for personal portfolio and blog.
+      #  image: /images/projects/profile2.jpg
+      #  featured:
+      #    name: Demo V2
+      #    link: https://hugo-profile-2.netlify.app
+      #  badges:
+      #    - "Hugo"
+      #    - "Bootstrap"
+      #    - "Javascript"
+      #  links:
+      #    - icon: fab fa-github
+      #      url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    title: "Контакты"
+    content: |
+      +7 (960) 391-90-60
+
+      [sadykovaelinaa@gmail.com](mailto:sadykovaelinaa@gmail.com)
+    
+    btnName1: Написать в Телеграм
+    btnLink1: https://t.me/ellridd/
+    
+    btnName2: Написать в WhatsApp
+    btnLink2: https://wa.me/79603919060
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      # github: https://github.com
+      # linkedin: https://linkedin.com
+      # twitter: https://twitter.com
+      # instagram: ellridd
+      telegram: ellridd
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
