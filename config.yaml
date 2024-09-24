@@ -2,6 +2,7 @@ baseURL: "https://elinasadykova.github.io/resume/"
 languageCode: "en-us"
 title: "Hugo Profile"
 theme: hugo-profile
+relativeURLs: true
 
 outputs:
   home:
