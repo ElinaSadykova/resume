@@ -1,6 +1,6 @@
 baseURL: "https://elinasadykova.github.io/resume/"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Резюме"
 theme: hugo-profile
 relativeURLs: true
 
@@ -54,8 +54,8 @@ markup:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Резюме"
+  description: Садыкова Элина
   # staticPath: ""  # The path to serve the static files from
   # favicon: "/fav.png"
 
@@ -88,13 +88,13 @@ params:
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
   color:
-    textColor: "#343a40"
-    secondaryTextColor: "#6c757d"
-    textLinkColor: "#007bff"
-    backgroundColor: "#eaedf0"
-    secondaryBackgroundColor: "#64ffda1a"
-    primaryColor: "#304145" # # 007bff" original blue
-    secondaryColor: "#f8f9fa"
+    textColor: "#343a40" # original 343a40
+    secondaryTextColor: "#6c757d" # original 6c757d
+    textLinkColor: "#007bff" # original 007bff
+    backgroundColor: "#eaedf0" # original eaedf0
+    secondaryBackgroundColor: "#64ffda1a" # original 64ffda1a
+    primaryColor: "#304145" # # 007bff"
+    secondaryColor: "#f8f9fa" # original f8f9fa
 
     # 238f51 green
     # 3d3d3d dark gray
@@ -150,7 +150,7 @@ params:
     button:
       enable: true
       name: "Скачать резюме в PDF"
-      url: "https://glvrd.ru/"
+      url: "/attachments/Sadykova_Elina_CV.pdf"
       download: true
       newPage: true
     socialLinks:
@@ -175,9 +175,8 @@ params:
     content: |
       Технический писатель с опытом UX-редактуры. 
 
-      Понимаю, что хорошо написанная документация повышает лояльность и число клиентов, снижает нагрузку на службу поддержки. 
-      Умею ставить себя на место пользователя и писать просто о сложном.  
-      Легко нахожу общий язык с людьми, есть опыт взаимодействия с разработчиками, продактами, дизайнерами.
+      Понимаю, что хорошо написанная документация повышает лояльность и число пользователей, снижает нагрузку на службу поддержки. 
+      Умею думать как пользователь и писать просто о сложном. Легко нахожу общий язык с разработчиками, продактами, дизайнерами.
 
       За год с небольшим выросла от стажёра до уровня middle в одной из крупнейших IT-компаний России.
       Увлечена профессией, эмпатична, инициативна. 
@@ -185,7 +184,7 @@ params:
       enable: true
       title: "Навыки и технологии:"
       items:
-        - "Пользовательская документация на русском и английским"
+        - "Пользовательская документация на русском и английском"
         - "UX-тексты на русском и английском"
         - "Инфостиль"
         - "API-документация"
@@ -202,6 +201,7 @@ params:
   experience:
     enable: true
     title: "Опыт работы"
+    subtitle: "за последние 3 года"
     items:
       - job: "Технический писатель"
         company: "VK"
@@ -261,9 +261,9 @@ params:
          Работала документоведом в отделе делопроизводства с большим объёмом информации в режиме многозадачности.
          
          Что делала:
-          - вычитывала и редактировала исходящие и внутренние документы: приказы, письма, служебные записки;
+          - вычитывала и редактировала приказы, письма, служебные записки;
           - консультировала сотрудников по оформлению и наполнению документов;
-          - выполняла обязанности руководителя отдела на время отпуска руководителя.
+          - выполняла обязанности руководителя отдела на время его отпуска.
 
   # Education
   education:
@@ -282,7 +282,7 @@ params:
          - фреймворки Jobs to be done и Job stories;
          - формулирование гипотезы и подбор метрик;
          - создание сторифреймов и макетов в Figma и FigJam;
-         - определение и написание tone of voice продукта;
+         - определение tone of voice продукта;
          - написание текстов с соблюдением tone of voice;
          - проведение UX-исследований и анализ результатов;
          - локализация, инклюзивность и адаптация под разные устройства.
@@ -361,7 +361,7 @@ params:
 
       - title: UX-тексты
         content: |
-          Примеры моих текстов: 
+          Примеры моих текстов <a href="/attachments/UX_texts.pdf" target="_blank">в PDF</a>
 
         # image: /images/projects/converter.jpg
         # featured:
