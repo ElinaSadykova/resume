@@ -1,6 +1,7 @@
 baseURL: "https://elinasadykova.github.io/resume/"
 languageCode: "en-us"
 title: "Hugo Profile"
+theme: hugo-profile
 
 outputs:
   home:
@@ -54,7 +55,7 @@ markup:
 params:
   title: "Hugo Profile"
   description: Text about my cool site
-  # staticPath: "static/"  # The path to serve the static files from
+  # staticPath: ""  # The path to serve the static files from
   # favicon: "/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
@@ -141,7 +142,7 @@ params:
       Общий стаж — 6 лет
 
       Казань, 28 лет
-    image: "images/6.jpg"
+    image: "/images/6.jpg"
     bottomImage:
       enable: false
     # roundImage: true # Make hero image circular | default false
@@ -169,7 +170,7 @@ params:
   about:
     enable: true
     title: "О себе"
-    image: "images/2.jpg"
+    image: "/images/2.jpg"
     content: |
       Технический писатель с опытом UX-редактуры. 
 
